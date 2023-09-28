@@ -14,7 +14,7 @@ contract Almohqq is ERC721, ERC721URIStorage, Ownable {
 
     function safeMint(string memory nftURI) public {
         uint256 newItemId = _tokenIds.current();
-        _safeMint(address(this), newItemId);
+        _mint(address(this), newItemId);
         _setTokenURI(newItemId, nftURI);
         _tokenIds.increment();
     }
