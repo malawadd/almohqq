@@ -11,39 +11,39 @@ import {fantom } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import {injectedWallet} from '@rainbow-me/rainbowkit/wallets';
 
-const rsk= {
-  id: 31,
-  name: "RSK Testnet",
-  network: "RSK-testnet",
+const bitfinity= {
+  id: 355113,
+  name: "Bitfinity TestNet",
+  network: "Bitfinity-testNet",
   nativeCurrency: {
       decimals: 18,
-      name: "RSK Testnet",
-      symbol: "tRBTC",
+      name: "Bitfinity TestNet",
+      symbol: "BFT",
  },
   rpcUrls: {
       default: {
-          http:  ["https://public-node.testnet.rsk.co"],
-          webSocket:  ["wss://public-node.testnet.rsk.co"],
+          http:  ["https://testnet.bitfinity.network"],
+          webSocket:  ["wss://testnet.bitfinity.network/"],
      },
       public: {
-          http:  ["https://public-node.testnet.rsk.co"],
-          webSocket:  ["wss://public-node.testnet.rsk.co"],
+          http:  ["https://testnet.bitfinity.network"],
+          webSocket:  ["wss://testnet.bitfinity.network/"],
      },
  },
   blockExplorers: {
       etherscan: {
-          name: "Mode",
-          url: "https://explorer.testnet.rsk.co",
+          name: "",
+          url: "",
      },
       default: {
           name: "Mode",
-          url: "https://explorer.testnet.rsk.co",
+          url: "",
      },
  },
 }
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [rsk],
+  [bitfinity],
   [publicProvider()]
 );
 
