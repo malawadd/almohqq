@@ -1,5 +1,5 @@
 export const almohqq = {
-    address: '0x32a48754fACf1F1a8B5A63B64aCD4Bdca883f404',
+    address: '0x3bBF3EaacC44b3ed11c1713D439aFC5f105871a5',
     abi: [
       {
         "inputs": [],
