@@ -70,7 +70,7 @@ export default function Content() {
     // @ts-ignore
     abi: almohqq.abi,
     // @ts-ignore
-    chainId: 31 ,
+    chainId: 355113 ,
     // @ts-ignore
     functionName: 'safeMint',
   });
